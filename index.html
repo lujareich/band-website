@@ -2,12 +2,121 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Meine Akustikband</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JUST2Sing</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: #333;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    nav {
+      background: #222;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #444;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.5rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      max-width: 300px;
+      margin: 0.5rem;
+      border-radius: 8px;
+    }
+
+    .dates ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .dates li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+    }
+
+    @media (min-width: 600px) {
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Willkommen bei unserer Band</h1>
-  <p>Nächster Auftritt: 20. Juli 2025 in Berlin!</p>
-  <img src="bandfoto.jpg" alt="Bandfoto" width="400">
-  <p>Kontakt: <a href="mailto:kontakt@deineband.de">kontakt@deineband.de</a></p>
+
+<header>
+  <h1>Willkommen bei unserer Akustikband</h1>
+  <p>Musik mit Seele – live & echt</p>
+</header>
+
+<nav>
+  <a href="#termine">Termine</a>
+  <a href="#bilder">Bilder</a>
+  <a href="#kontakt">Kontakt</a>
+</nav>
+
+<section id="termine" class="dates">
+  <h2>Kommende Auftritte</h2>
+  <ul>
+    <li><strong>20. Juli 2025</strong> – Berlin, Sommerbühne</li>
+    <li><strong>12. August 2025</strong> – Hamburg, Akustiknacht</li>
+    <li><strong>3. September 2025</strong> – Köln, Soundgarten</li>
+  </ul>
+</section>
+
+<section id="bilder" class="gallery">
+  <h2>Bildergalerie</h2>
+  <img src="bilder/band1.jpg" alt="Bandbild 1">
+  <img src="bilder/band2.jpg" alt="Bandbild 2">
+  <img src="bilder/band3.jpg" alt="Bandbild 3">
+</section>
+
+<section id="kontakt">
+  <h2>Kontakt</h2>
+  <p>Du willst uns buchen oder einfach hallo sagen?</p>
+  <p>📧 <a href="mailto:kontakt@deineband.de">kontakt@deineband.de</a></p>
+  <p>📸 <a href="https://instagram.com/deineband" target="_blank">Instagram</a></p>
+</section>
+
+<footer>
+  &copy; 2025 Deine Akustikband. Alle Rechte vorbehalten.
+</footer>
+
 </body>
 </html>
